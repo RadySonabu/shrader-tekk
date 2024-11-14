@@ -20,7 +20,7 @@ import { Fragment } from "react";
 
 export default function Navbar() {
   return (
-    <div className="w-full h-24 header flex items-center">
+    <div className="w-full h-24 navbar-container flex items-center">
       <Popover className={"container mx-auto flex items-center px-6 py-2 h24"}>
         {/* *** Logo *** */}
         <div className="logo">
