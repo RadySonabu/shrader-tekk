@@ -1,5 +1,82 @@
 /* *** Custom CSS For Header *** */
 
 .header {
+  position: relative;
   background: var(--matte-black);
+  height: calc(100vh - 9rem);
+}
+
+.hero-background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* *** Design of Background *** */
+.hero-background .circle {
+  position: absolute;
+  top: 5rem;
+  right: -20rem;
+  transform: rotate(-30deg);
+}
+
+.hero-background .circle3d {
+  position: absolute;
+  bottom: 10rem;
+  left: 10rem;
+  animation: jumpAndRotate 3s infinite ease-in-out;
+}
+
+/* ***Design of Header Content *** */
+
+.header-content {
+  position: relative;
+  z-index: 10;
+}
+.elevate-text {
+  padding-left: 3rem;
+}
+
+.elevate-text h2 {
+  font-family: var(--monda);
+  font-weight: 800;
+  color: var(--white);
+  font-size: 5.5rem;
+  background: linear-gradient(to right, var(--white) 50%, #ff5858 50%, #cc2e5d);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+}
+
+.elevate-text h2:hover {
+  background-position: -100%;
+}
+
+.generative-ai {
+  padding-top: 1.2rem;
+  padding-right: 3rem;
+}
+
+.generative-ai p {
+  font-family: var(--monda);
+  color: var(--white);
+  font-size: 4rem;
+}
+
+@keyframes jumpAndRotate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-30px);
+  }
 }
