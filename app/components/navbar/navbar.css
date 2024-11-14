@@ -1,3 +1,6 @@
+.navbar-container {
+  background: var(--matte-black);
+}
 .menu-link {
   font-family: var(--poppins);
   font-weight: 600;
@@ -54,8 +57,9 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .mobile {
+    display: inherit;
     margin-left: -2rem;
   }
 }
