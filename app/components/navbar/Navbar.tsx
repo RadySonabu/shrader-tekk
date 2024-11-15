@@ -49,7 +49,7 @@ export default function Navbar() {
         </div>
 
         {/* *** Mobile menu button *** */}
-        <div className="flex grow items-center justify-end sm:hidden mobile:block">
+        <div className="flex grow items-center justify-end sm:hidden mobile">
           <PopoverButton className="inline-flex items-center justify-center rounded-md p-2 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 openmenu">
             {({ open }) => (
               <>
