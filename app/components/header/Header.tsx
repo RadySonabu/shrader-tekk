@@ -48,7 +48,7 @@ export default function Header() {
         </div>
         {/* *** End Background *** */}
         {/* *** Content *** */}
-        <div className="container mx-auto py-20 header-content">
+        <div className="container mx-auto py-20 font-monda header-content">
           <div className="elevate-text">
             <h2>Elevate Your Digital Presence</h2>
           </div>
