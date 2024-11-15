@@ -6,7 +6,7 @@ export const NavData = [
   },
   {
     id: 2,
-    title: "services",
+    title: "Services",
     url: "/services",
   },
   {

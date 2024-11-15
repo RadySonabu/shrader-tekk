@@ -1,5 +1,6 @@
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import "./header.css";
+
 import Image from "next/image";
 export default function Header() {
   const imgStyle = {
