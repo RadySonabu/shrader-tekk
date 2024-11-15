@@ -23,9 +23,16 @@
 
 .hero-background .circle3d {
   position: absolute;
-  bottom: 10rem;
+  bottom: 6rem;
   left: 10rem;
   animation: jumpAndRotate 3s infinite ease-in-out;
+  z-index: 9999;
+}
+
+.hero-background .digital-images {
+  position: absolute;
+  bottom: 10rem;
+  left: 18rem;
 }
 
 /* ***Design of Header Content *** */
@@ -33,13 +40,13 @@
 .header-content {
   position: relative;
   z-index: 10;
+  font-family: var(--monda);
 }
 .elevate-text {
   padding-left: 3rem;
 }
 
 .elevate-text h2 {
-  font-family: var(--monda);
   font-weight: 800;
   color: var(--white);
   font-size: 5.5rem;
@@ -54,15 +61,42 @@
   background-position: -100%;
 }
 
-.generative-ai {
-  padding-top: 1.2rem;
+.generative-ai,
+.elevate-description {
   padding-right: 3rem;
+  display: flex;
+  justify-content: end;
+}
+
+.elevate-description {
+  width: 100%;
+}
+.elevate-description p {
+  width: 50%;
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+.digital-images {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
 }
 
 .generative-ai p {
   font-family: var(--monda);
   color: var(--white);
   font-size: 4rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.generative-ai .generative-arrow {
+  font-size: 9rem;
+  width: 8rem;
+  color: var(--light-blue);
+  margin-right: 20px;
 }
 
 @keyframes jumpAndRotate {

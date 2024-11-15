@@ -1,12 +1,22 @@
+import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import "./header.css";
 import Image from "next/image";
 export default function Header() {
   const imgStyle = {
-    opacity: 0.5,
+    opacity: 0.2,
+  };
+
+  const digitalStyle = {
+    objectFit: "cover" as const,
+    width: "100%",
+    height: "100%",
+    borderRadius: "30px",
+    opacity: 0.2,
   };
   return (
     <header className="w-full header">
       <div className="hero-background -z-1">
+        {/* *** Background *** */}
         <div className="circle">
           <Image
             src="/images/circle-transparent.png"
@@ -21,17 +31,42 @@ export default function Header() {
             src="/images/3d-circle.png"
             alt="Circle Background"
             width={300}
-            height={100}
+            height={300}
           />
         </div>
+        <div className="digital-images">
+          <Image
+            src="/images/digital-marketing.jpg"
+            alt="Circle Background"
+            width={600}
+            height={400}
+            loading="eager"
+            style={digitalStyle}
+          />
+        </div>
+        {/* *** End Background *** */}
+        {/* *** Content *** */}
         <div className="container mx-auto py-20 header-content">
           <div className="elevate-text">
             <h2>Elevate Your Digital Presence</h2>
           </div>
           <div className="generative-ai">
+            <ArrowLongRightIcon className="generative-arrow" />
             <p>with Generative AI</p>
           </div>
+          <div className="elevate-description">
+            <p>
+              At Shrader Technologies, we specialize in harnessing the power of
+              Generative AI and social media to skyrocket your brand’s
+              visibility on platforms like YouTube, Facebook, and TikTok. From
+              creating viral content to optimizing your social strategy, we help
+              you dominate the digital landscape and connect with your audience
+              like never before.
+            </p>
+          </div>
         </div>
+        {/* *** End Content *** */}
+        div.
       </div>
     </header>
   );
