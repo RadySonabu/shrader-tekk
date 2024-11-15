@@ -1,7 +1,8 @@
-import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import "./header.css";
-
+import Link from "next/link";
+import { FaFacebookSquare } from "react-icons/fa";
 import Image from "next/image";
+import { FaArrowRightLong, FaPlay, FaSquareYoutube } from "react-icons/fa6";
 export default function Header() {
   const imgStyle = {
     opacity: 0.2,
@@ -48,12 +49,12 @@ export default function Header() {
         </div>
         {/* *** End Background *** */}
         {/* *** Content *** */}
-        <div className="container mx-auto py-20 font-monda header-content">
+        <div className="container mx-auto py-20 font-[family-name:var(--monda)] header-content">
           <div className="elevate-text">
             <h2>Elevate Your Digital Presence</h2>
           </div>
           <div className="generative-ai">
-            <ArrowLongRightIcon className="generative-arrow" />
+            <FaArrowRightLong className="generative-arrow" />
             <p>with Generative AI</p>
           </div>
           <div className="elevate-description">
@@ -68,7 +69,23 @@ export default function Header() {
           </div>
         </div>
         {/* *** End Content *** */}
-        div.
+        <div className="header-links">
+          <div className="social-header-links">
+            <Link href="https://www.facebook.com/profile.php?id=61568733444376">
+              <FaFacebookSquare className="h-8 w-8" />
+            </Link>
+
+            <Link href="https://www.youtube.com/@shradertechnologies">
+              <FaSquareYoutube className="h-8 w-8" />
+            </Link>
+          </div>
+          <div className="learn-header-links py-3 px-6 font-[family-name:var(--poppins)]">
+            <Link href="/services" className="flex items-center gap-2">
+              Learn More
+              <FaPlay className="h-6 w-6 faplay-icons" />
+            </Link>
+          </div>
+        </div>
       </div>
     </header>
   );

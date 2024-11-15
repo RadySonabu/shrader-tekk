@@ -11,11 +11,12 @@ import {
   PopoverPanel,
   Transition,
 } from "@headlessui/react";
+
 import {
-  ArrowRightStartOnRectangleIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/16/solid";
+  FaArrowUpRightDots,
+  FaBars,
+  FaRightFromBracket,
+} from "react-icons/fa6";
 import { Fragment } from "react";
 
 export default function Navbar() {
@@ -60,9 +61,9 @@ export default function Navbar() {
                   {open ? "Close Menu" : "Open Menu"}
                 </span>
                 {open ? (
-                  <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                  <FaRightFromBracket className="h-6 w-6" aria-hidden="true" />
                 ) : (
-                  <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                  <FaBars className="h-6 w-6" aria-hidden="true" />
                 )}
               </>
             )}
@@ -98,7 +99,10 @@ export default function Navbar() {
                   <div className="-mr-2">
                     <PopoverButton className="inline-flex items-center justify-center rounded-md p-2 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 closemenu">
                       <span className="sr-only">Close Menu</span>
-                      <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                      <FaRightFromBracket
+                        className="h-6 w-6"
+                        aria-hidden="true"
+                      />
                     </PopoverButton>
                   </div>
                 </div>
@@ -109,7 +113,7 @@ export default function Navbar() {
                         return (
                           <li
                             key={item.id}
-                            className="focus:outline-none focus-ring-inset focus:ring-gray-500 px-2 mobilemenu"
+                            className="focus:outline-none focus-ring-inset focus:ring-gray-500 px-2 font-[family-name:var(--poppins)] mobilemenu"
                           >
                             <Link href={item.url}>{item.title}</Link>
                           </li>
@@ -121,7 +125,7 @@ export default function Navbar() {
                 <div className="w-full flex justify-center">
                   <Link
                     href="/getstarted"
-                    className="py-3 px-6 font-poppins getstarted-mobile"
+                    className="py-3 px-6 font-[family-name:var(--poppins)] getstarted-mobile"
                   >
                     Let&apos;s Talk
                   </Link>
@@ -134,11 +138,11 @@ export default function Navbar() {
         <div className="hidden sm:block">
           <Link
             href="/getstarted"
-            className="py-3 px-6 font-poppins getstarted"
+            className="py-3 px-6 font-[family-name:var(--poppins)] getstarted"
           >
             Let&apos;s Talk
             <span className="ml-2">
-              <ArrowRightStartOnRectangleIcon className="h-6 w-6 arrow" />
+              <FaArrowUpRightDots className="h-6 w-6 arrow" />
             </span>
           </Link>
         </div>
