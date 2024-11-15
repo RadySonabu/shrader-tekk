@@ -39,7 +39,10 @@ export default function Navbar() {
             {NavData.map((item) => {
               return (
                 <li key={item.id}>
-                  <Link href={item.url} className="uppercase menu-link">
+                  <Link
+                    href={item.url}
+                    className="uppercase font-poppins menu-link"
+                  >
                     {item.title}
                   </Link>
                 </li>
@@ -89,6 +92,7 @@ export default function Navbar() {
                     alt="logo"
                     width={150}
                     height={100}
+                    loading="eager"
                     priority
                   />
                   <div className="-mr-2">
@@ -117,7 +121,7 @@ export default function Navbar() {
                 <div className="w-full flex justify-center">
                   <Link
                     href="/getstarted"
-                    className="py-3 px-6 getstarted-mobile"
+                    className="py-3 px-6 font-poppins getstarted-mobile"
                   >
                     Let&apos;s Talk
                   </Link>
@@ -128,7 +132,10 @@ export default function Navbar() {
         </Transition>
         {/* *** Get Started Button *** */}
         <div className="hidden sm:block">
-          <Link href="/getstarted" className="py-3 px-6 getstarted">
+          <Link
+            href="/getstarted"
+            className="py-3 px-6 font-poppins getstarted"
+          >
             Let&apos;s Talk
             <span className="ml-2">
               <ArrowRightStartOnRectangleIcon className="h-6 w-6 arrow" />

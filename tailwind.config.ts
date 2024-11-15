@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        rajdhani: ["Rajdhani", "sans-serif"],
+        monda: ["Monda", "sans-serif"],
+      },
     },
   },
   plugins: [],
