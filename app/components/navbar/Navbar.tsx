@@ -41,7 +41,7 @@ export default function Navbar() {
                 <li key={item.id}>
                   <Link
                     href={item.url}
-                    className="uppercase font-poppins menu-link"
+                    className="uppercase font-[family-name:var(--poppins)] menu-link"
                   >
                     {item.title}
                   </Link>
