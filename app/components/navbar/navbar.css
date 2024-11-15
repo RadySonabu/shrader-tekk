@@ -64,8 +64,9 @@
 
 @media screen and (max-width: 768px) {
   .mobile {
-    display: inherit;
+    display: inherit !important;
     margin-left: -2rem;
+    justify-content: left;
   }
 }
 
