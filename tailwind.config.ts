@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        poppins: "var(--poppins)",
         rajdhani: ["Rajdhani", "sans-serif"],
         monda: ["Monda", "sans-serif"],
       },
