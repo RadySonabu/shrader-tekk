@@ -50,28 +50,3 @@
 .arrow {
   color: var(--matte-black);
 }
-
-@media screen and (max-width: 1023px) {
-  .menu-link {
-    display: none;
-  }
-
-  .mobile {
-    display: inherit;
-    justify-content: left;
-    margin-left: -10rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mobile {
-    display: inherit;
-    margin-left: -2rem;
-  }
-}
-
-@media screen and (max-width: 639px) {
-  .mobile {
-    justify-content: end;
-  }
-}
