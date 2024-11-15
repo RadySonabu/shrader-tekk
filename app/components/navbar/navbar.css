@@ -2,7 +2,6 @@
   background: var(--matte-black);
 }
 .menu-link {
-  font-family: var(--poppins);
   font-weight: 600;
   color: var(--white);
   letter-spacing: 1px;
@@ -23,7 +22,7 @@
 .getstarted,
 .getstarted-mobile {
   background: var(--yellow);
-  font-family: var(--poppins);
+
   font-weight: 600;
   border-radius: 10px;
   color: var(--white);
@@ -66,12 +65,12 @@
   .mobile {
     display: inherit !important;
     margin-left: -2rem;
-    justify-content: end !important;
+    justify-content: left !important;
   }
 }
 
 @media screen and (max-width: 639px) {
   .mobile {
-    justify-content: end;
+    justify-content: end !important;
   }
 }

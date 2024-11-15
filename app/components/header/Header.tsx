@@ -14,8 +14,9 @@ export default function Header() {
     borderRadius: "30px",
     opacity: 0.2,
   };
+
   return (
-    <header className="w-full header">
+    <header className="w-full header z-10">
       <div className="hero-background -z-1">
         {/* *** Background *** */}
         <div className="circle">

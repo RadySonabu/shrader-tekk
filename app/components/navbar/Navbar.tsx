@@ -70,7 +70,7 @@ export default function Navbar() {
         </div>
 
         {/* *** Mobile menu Panel *** */}
-        <PopoverBackdrop className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity " />
+        <PopoverBackdrop className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity z-50 " />
         <Transition
           as={Fragment}
           enter="duration-200 ease-out"

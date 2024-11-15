@@ -26,7 +26,7 @@
   bottom: 6rem;
   left: 10rem;
   animation: jumpAndRotate 3s infinite ease-in-out;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .hero-background .digital-images {
