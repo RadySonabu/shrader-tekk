@@ -57,7 +57,7 @@ export default function Header() {
             <FaArrowRightLong className="generative-arrow" />
             <p>with Generative AI</p>
           </div>
-          <div className="elevate-description">
+          <div className="elevate-description font-[family-name:var(--poppins)]">
             <p>
               At Shrader Technologies, we specialize in harnessing the power of
               Generative AI and social media to skyrocket your brand’s
