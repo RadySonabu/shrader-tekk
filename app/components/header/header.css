@@ -197,6 +197,9 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .elevate-text {
+    padding-left: 0;
+  }
   .elevate-text h2 {
     text-align: center;
     font-size: 3rem;
@@ -230,5 +233,15 @@
   .hero-background .circle {
     width: 300px;
     right: -10rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .generative-ai p {
+    font-size: 2rem;
+  }
+
+  .header-content {
+    padding-bottom: 2rem !important;
   }
 }
