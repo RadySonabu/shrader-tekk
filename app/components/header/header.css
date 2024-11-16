@@ -48,7 +48,7 @@
 .elevate-text h2 {
   font-weight: 800;
   color: var(--white);
-  font-size: 5.5rem;
+  font-size: 2rem;
   background: linear-gradient(to right, var(--white) 50%, #ff5858 50%, #cc2e5d);
   background-size: 200%;
   background-clip: text;
@@ -60,43 +60,47 @@
   background-position: -100%;
 }
 
-.generative-ai,
 .elevate-description {
-  padding-right: 3rem;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  display: block;
+  height: 30%;
 }
 
-.elevate-description {
-  width: 100%;
+.elevate-videos {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(400px, 1fr)
+  ); /* Equal columns for video and text */
+  grid-auto-flow: row;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+  justify-items: center;
 }
+
+.videos {
+  position: relative;
+  width: 80%; /* Use full width available in its grid cell */
+  padding-top: 40%; /* Maintain 16:9 aspect ratio */
+}
+
+.videos iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Optional, already set inline */
+}
+
 .elevate-description p {
-  width: 50%;
+  width: 100%;
   font-size: 1.3rem;
   color: var(--white);
 }
 
-.digital-images {
-  width: 600px;
-  height: 400px;
-  overflow: hidden;
-}
-
-.generative-ai p {
-  font-family: var(--monda);
-  color: var(--white);
-  font-size: 4rem;
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-
-.generative-ai .generative-arrow {
-  font-size: 9rem;
-  width: 8rem;
-  color: var(--light-blue);
-  margin-right: 20px;
+.elevate-text h2 span {
+  border-bottom: 3px solid var(--yellow);
 }
 
 .header-links {
@@ -163,26 +167,12 @@
 
 @media screen and (min-width: 1280px) {
   .elevate-text h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 @media screen and (max-width: 1279px) {
   .elevate-text h2 {
-    font-size: 3.5rem;
-  }
-
-  .generative-ai .generative-arrow {
     font-size: 3rem;
-    margin-right: 0;
-  }
-
-  .generative-ai p {
-    font-size: 2.5rem;
-  }
-
-  .elevate-description p {
-    padding-top: 3rem;
-    font-size: 1rem;
   }
 
   .hero-background .digital-images {
@@ -197,6 +187,10 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .header-content {
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+  }
   .elevate-text {
     padding-left: 0;
   }
@@ -205,18 +199,12 @@
     font-size: 3rem;
   }
 
-  .generative-ai,
-  .elevate-description {
-    justify-content: center !important;
-    padding-right: 0;
+  .videos {
+    position: relative;
+    width: 60%; /* Use full width available in its grid cell */
+    padding-top: 30%; /* Maintain 16:9 aspect ratio */
   }
 
-  .elevate-description p {
-    width: 80%;
-    text-align: center;
-    font-size: 0.9rem;
-    padding-top: 3rem;
-  }
   .header-links {
     margin: 0 auto;
     width: 80%;
@@ -227,12 +215,31 @@
     align-items: center;
     gap: 30px;
   }
+
+  .elevate-description p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .hero-background .circle {
     width: 300px;
     right: -10rem;
+  }
+
+  .hero-background .circle {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .elevate-text h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .elevate-description p {
+    padding: 0 40px !important;
   }
 }
 

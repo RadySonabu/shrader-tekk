@@ -2,17 +2,9 @@ import "./header.css";
 import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
 import Image from "next/image";
-import { FaArrowRightLong, FaPlay, FaSquareYoutube } from "react-icons/fa6";
+import { FaPlay, FaSquareYoutube } from "react-icons/fa6";
 export default function Header() {
   const imgStyle = {
-    opacity: 0.2,
-  };
-
-  const digitalStyle = {
-    objectFit: "cover" as const,
-    width: "100%",
-    height: "100%",
-    borderRadius: "30px",
     opacity: 0.2,
   };
 
@@ -37,35 +29,40 @@ export default function Header() {
             height={300}
           />
         </div>
-        <div className="digital-images">
-          <Image
-            src="/images/digital-marketing.jpg"
-            alt="Circle Background"
-            width={600}
-            height={400}
-            loading="eager"
-            style={digitalStyle}
-          />
-        </div>
+
         {/* *** End Background *** */}
         {/* *** Content *** */}
         <div className="container mx-auto py-20 font-[family-name:var(--monda)] header-content">
           <div className="elevate-text">
-            <h2>Elevate Your Digital Presence</h2>
+            <h2>
+              Leverage <span>the best</span> Offshore AI Social Media Agency
+            </h2>
           </div>
-          <div className="generative-ai">
-            <FaArrowRightLong className="generative-arrow" />
-            <p>with Generative AI</p>
-          </div>
+
           <div className="elevate-description font-[family-name:var(--poppins)]">
-            <p>
-              At Shrader Technologies, we specialize in harnessing the power of
-              Generative AI and social media to skyrocket your brand’s
-              visibility on platforms like YouTube, Facebook, and TikTok. From
-              creating viral content to optimizing your social strategy, we help
-              you dominate the digital landscape and connect with your audience
-              like never before.
-            </p>
+            <div className="elevate-videos">
+              <div className="videos">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/HKavYscl-jg?si=uj6V8osWvbZvntHW&amp;controls=0"
+                  title="YouTube video player"
+                  style={{ border: "none" }}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              <p>
+                At Shrader Technologies, we specialize in harnessing the power
+                of Generative AI and social media to skyrocket your brand’s
+                visibility on platforms like YouTube, Facebook, and TikTok. From
+                creating viral content to optimizing your social strategy, we
+                help you dominate the digital landscape and connect with your
+                audience like never before.
+              </p>
+            </div>
           </div>
         </div>
         {/* *** End Content *** */}

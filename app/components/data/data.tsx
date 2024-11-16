@@ -6,21 +6,16 @@ export const NavData = [
   },
   {
     id: 2,
-    title: "Services",
-    url: "/services",
+    title: "Our Edge",
+    url: "/ouredge",
   },
   {
     id: 3,
-    title: "Team",
+    title: "Our Team",
     url: "/team",
   },
   {
     id: 4,
-    title: "About",
-    url: "/about",
-  },
-  {
-    id: 5,
     title: "Contact",
     url: "/contact",
   },
