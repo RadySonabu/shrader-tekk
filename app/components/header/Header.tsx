@@ -70,7 +70,7 @@ export default function Header() {
             <Link href="https://www.facebook.com/shradertech/">
               <FaFacebookSquare className="h-8 w-8 text-blue-600" />
             </Link>
-            <Link href="hhttps://youtube.com/@shradertechnologies?si=sFJsVEXKMER252PV">
+            <Link href="hhttps://youtube.com/@shradertechnologies">
               <FaSquareYoutube className="h-8 w-8 text-red-600" />
             </Link>
 
