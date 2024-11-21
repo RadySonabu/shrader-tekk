@@ -126,7 +126,7 @@ export default function Navbar() {
                 </div>
                 <div className="w-full flex justify-center">
                   <Link
-                    href="/getstarted"
+                    href="/contact"
                     className="py-3 px-6 font-[family-name:var(--poppins)] getstarted-mobile"
                   >
                     Let&apos;s Talk
@@ -139,7 +139,7 @@ export default function Navbar() {
         {/* *** Get Started Button *** */}
         <div className="hidden sm:block">
           <Link
-            href="/getstarted"
+            href="/contact"
             className="py-3 px-6 font-[family-name:var(--poppins)] getstarted"
           >
             Let&apos;s Talk

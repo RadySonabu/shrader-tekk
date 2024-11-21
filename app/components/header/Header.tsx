@@ -74,7 +74,7 @@ export default function Header() {
             </Link>
           </div>
           <div className="learn-header-links py-3 px-6 font-[family-name:var(--poppins)]">
-            <Link href="/services" className="flex items-center gap-2">
+            <Link href="/contact" className="flex items-center gap-2">
               Learn More
               <FaPlay className="h-6 w-6 faplay-icons" />
             </Link>
