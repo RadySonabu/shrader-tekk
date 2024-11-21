@@ -18,7 +18,7 @@ export default function Form() {
       try {
         await emailjs.sendForm(
           "service_fzlkhuh",
-          "template_4c6zdf6",
+          "template_qynz1rw",
           form.current,
           "CqOt_i2a7x9ig0tV6"
         );
