@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "./components/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Shrader Technologies",
@@ -29,7 +28,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} ${monda.className}`}>
-        <Navbar />
         {children}
       </body>
     </html>

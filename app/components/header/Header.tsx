@@ -1,6 +1,6 @@
 import "./header.css";
 import Link from "next/link";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaMouse } from "react-icons/fa";
 import Image from "next/image";
 import { FaPlay, FaSquareYoutube } from "react-icons/fa6";
 export default function Header() {
@@ -25,8 +25,8 @@ export default function Header() {
           <Image
             src="/images/3d-circle.png"
             alt="Circle Background"
-            width={300}
-            height={300}
+            width={200}
+            height={200}
           />
         </div>
 
@@ -45,7 +45,7 @@ export default function Header() {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/HKavYscl-jg?si=uj6V8osWvbZvntHW&amp;controls=0"
+                  src="https://www.youtube.com/embed/Cqc6xJXBKjs?controls=0&modestbranding=1&rel=0"
                   title="YouTube video player"
                   style={{ border: "none" }}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -55,25 +55,22 @@ export default function Header() {
               </div>
 
               <p>
-                At Shrader Technologies, we specialize in harnessing the power
-                of Generative AI and social media to skyrocket your brand’s
-                visibility on platforms like YouTube, Facebook, and TikTok. From
-                creating viral content to optimizing your social strategy, we
-                help you dominate the digital landscape and connect with your
-                audience like never before.
+                Let us skyrocket your social media.  Let us build your apps. 
+                Let us plan and build your solutions with greater efficiency,
+                <span> affordability and flexibility </span>than you will find
+                anywhere else.
               </p>
             </div>
           </div>
         </div>
         {/* *** End Content *** */}
-        <div className="header-links">
+        <div className="header-links z-10 pb-4">
           <div className="social-header-links">
-            <Link href="https://www.facebook.com/profile.php?id=61568733444376">
-              <FaFacebookSquare className="h-8 w-8" />
+            <Link href="https://www.facebook.com/shradertech/">
+              <FaFacebookSquare className="h-8 w-8 text-blue-600" />
             </Link>
-
-            <Link href="https://www.youtube.com/@shradertechnologies">
-              <FaSquareYoutube className="h-8 w-8" />
+            <Link href="hhttps://youtube.com/@shradertechnologies?si=sFJsVEXKMER252PV">
+              <FaSquareYoutube className="h-8 w-8 text-red-600" />
             </Link>
           </div>
           <div className="learn-header-links py-3 px-6 font-[family-name:var(--poppins)]">
@@ -83,6 +80,9 @@ export default function Header() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="mouse-icon">
+        <FaMouse className="w-5 h-5 " />
       </div>
     </header>
   );

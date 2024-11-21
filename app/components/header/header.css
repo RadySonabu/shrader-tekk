@@ -3,7 +3,7 @@
 .header {
   position: relative;
   background: var(--matte-black);
-  height: calc(100vh - 9rem);
+  height: auto;
 }
 
 .hero-background {
@@ -23,8 +23,8 @@
 
 .hero-background .circle3d {
   position: absolute;
-  bottom: 6rem;
-  left: 10rem;
+  bottom: 0;
+  left: 5rem;
   animation: jumpAndRotate 3s infinite ease-in-out;
   z-index: 1;
 }
@@ -80,7 +80,7 @@
 
 .videos {
   position: relative;
-  width: 80%; /* Use full width available in its grid cell */
+  width: 70%; /* Use full width available in its grid cell */
   padding-top: 40%; /* Maintain 16:9 aspect ratio */
 }
 
@@ -97,6 +97,11 @@
   width: 100%;
   font-size: 1.3rem;
   color: var(--white);
+}
+
+.elevate-description p span {
+  color: var(--light-blue);
+  border-bottom: 3px solid var(--yellow);
 }
 
 .elevate-text h2 span {
@@ -128,6 +133,10 @@
   transition: background 0.5s;
 }
 
+.learn-header-links:hover {
+  background: var(--light-blue);
+}
+
 .learn-header-links .faplay-icons {
   color: var(--matte-black);
   transition: transform 0.3s ease; /* Smooth transition on hover */
@@ -137,6 +146,17 @@
   animation: move-smooth 0.6s ease-in-out forwards; /* Increased duration for smoothness */
 }
 
+.mouse-icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5.5%;
+  padding-bottom: 5px;
+  animation-delay: 0.2s;
+  animation: mouseIcon 3s infinite ease-in-out;
+  color: var(--charcoal);
+}
 @keyframes move-smooth {
   0% {
     transform: translateX(0);
@@ -164,10 +184,36 @@
     transform: translateY(-30px);
   }
 }
+@keyframes mouseIcon {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+}
 
 @media screen and (min-width: 1280px) {
+  .header {
+    max-height: 100vh;
+  }
   .elevate-text h2 {
     font-size: 3.5rem;
+  }
+
+  .elevate-description {
+    margin-top: 5rem;
+  }
+
+  .elevate-description p {
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -201,8 +247,8 @@
 
   .videos {
     position: relative;
-    width: 60%; /* Use full width available in its grid cell */
-    padding-top: 30%; /* Maintain 16:9 aspect ratio */
+    width: 50%; /* Use full width available in its grid cell */
+    padding-top: 28%; /* Maintain 16:9 aspect ratio */
   }
 
   .header-links {
@@ -231,6 +277,14 @@
   .hero-background .circle {
     width: 200px;
   }
+
+  .elevate-description p {
+    padding: 0 40px !important;
+  }
+  .hero-background .circle3d {
+    width: 150px;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 639px) {
@@ -250,5 +304,11 @@
 
   .header-content {
     padding-bottom: 2rem !important;
+  }
+
+  .videos {
+    position: relative;
+    width: 90%; /* Use full width available in its grid cell */
+    padding-top: 50%; /* Maintain 16:9 aspect ratio */
   }
 }

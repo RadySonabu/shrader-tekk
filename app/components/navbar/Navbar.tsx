@@ -21,17 +21,20 @@ import { Fragment } from "react";
 
 export default function Navbar() {
   return (
-    <div className="w-full h-24 navbar-container flex items-center">
+    <div className="w-full h-24 navbar-container flex items-center ">
       <Popover className={"container mx-auto flex items-center px-6 py-2 h24"}>
         {/* *** Logo *** */}
         <div className="logo">
-          <Image
-            src="/images/logo.png"
-            alt="logo"
-            width={230}
-            height={100}
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/images/logo.png"
+              alt="logo"
+              width={230}
+              height={100}
+              priority={true}
+              style={{ cursor: "pointer" }}
+            />
+          </Link>
         </div>
 
         {/* ***  menu *** */}
@@ -86,15 +89,14 @@ export default function Navbar() {
             className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition z-50"
           >
             <div className="rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-500">
-              <div className="px-5 pt-5 pb-6">
+              <div className="px-5 pt-5 pb-6 z-50">
                 <div className="flex items-center justify-between">
                   <Image
                     src="/images/logoheader.png"
                     alt="logo"
                     width={150}
                     height={100}
-                    loading="eager"
-                    priority
+                    priority={true}
                   />
                   <div className="-mr-2">
                     <PopoverButton className="inline-flex items-center justify-center rounded-md p-2 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 closemenu">
