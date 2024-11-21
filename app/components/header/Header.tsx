@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaFacebookSquare, FaMouse } from "react-icons/fa";
 import Image from "next/image";
 import { FaPlay, FaSquareYoutube } from "react-icons/fa6";
+import { AiFillTikTok } from "react-icons/ai";
 export default function Header() {
   const imgStyle = {
     opacity: 0.2,
@@ -71,6 +72,10 @@ export default function Header() {
             </Link>
             <Link href="hhttps://youtube.com/@shradertechnologies?si=sFJsVEXKMER252PV">
               <FaSquareYoutube className="h-8 w-8 text-red-600" />
+            </Link>
+
+            <Link href="https://www.tiktok.com/@shrader.tech">
+              <AiFillTikTok className="h-8 w-8 text-black-600" />
             </Link>
           </div>
           <div className="learn-header-links py-3 px-6 font-[family-name:var(--poppins)]">

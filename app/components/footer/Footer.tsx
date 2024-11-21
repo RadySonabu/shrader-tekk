@@ -3,6 +3,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaArrowUpRightDots, FaSquareYoutube } from "react-icons/fa6";
 import "./footer.css";
 import { NavData } from "../data/data";
+import { AiFillTikTok } from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -39,6 +40,10 @@ export default function Footer() {
               </Link>
               <Link href="hhttps://youtube.com/@shradertechnologies?si=sFJsVEXKMER252PV">
                 <FaSquareYoutube className="h-6 w-6 text-red-600" />
+              </Link>
+
+              <Link href="https://www.tiktok.com/@shrader.tech">
+                <AiFillTikTok className="h-6 w-6 text-black-600" />
               </Link>
             </div>
             <p className="mt-2 text-gray-400 text-xs">
