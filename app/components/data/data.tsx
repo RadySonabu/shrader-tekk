@@ -74,12 +74,12 @@ export const edgeData: StepData[] = [
   {
     id: 2,
     title: "Step",
-    description: "We use the latest AIs to make it better and faster",
+    description: "We use the latest AIs to make it faster",
   },
   {
     id: 3,
     title: "Step",
-    description: "We use social media trends to market it better and faster",
+    description: "We use social media trends to market it better",
   },
   {
     id: 4,

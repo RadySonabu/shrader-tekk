@@ -1,6 +1,6 @@
 import "./header.css";
 import Link from "next/link";
-import { FaFacebookSquare, FaMouse } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 import Image from "next/image";
 import { FaPlay, FaSquareYoutube } from "react-icons/fa6";
 import { AiFillTikTok } from "react-icons/ai";
@@ -20,14 +20,6 @@ export default function Header() {
             width={600}
             height={100}
             style={imgStyle}
-          />
-        </div>
-        <div className="circle3d">
-          <Image
-            src="/images/3d-circle.png"
-            alt="Circle Background"
-            width={200}
-            height={200}
           />
         </div>
 
@@ -85,9 +77,6 @@ export default function Header() {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="mouse-icon">
-        <FaMouse className="w-5 h-5 " />
       </div>
     </header>
   );
