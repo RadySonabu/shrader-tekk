@@ -54,6 +54,7 @@
   color: var(--matte-black);
   font-weight: 800;
   font-size: 1.5rem;
+  text-align: center;
   border-bottom: 2px solid var(--yellow);
 }
 
@@ -82,4 +83,19 @@
 
 .portfolio-container li:hover .back-card {
   transform: rotateY(0deg);
+}
+
+@media screen and (max-width: 1279px) {
+  .back-items .problem,
+  .back-items .solution {
+    font-size: 0.7rem;
+  }
+
+  .back-items .status {
+    padding: 0.5rem 1rem;
+    background: var(--yellow);
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--matte-black);
+  }
 }

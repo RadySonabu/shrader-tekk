@@ -65,6 +65,9 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li className="font-700 font-[family-name:var(--poppins)] hover:underline">
+                <Link href="/terms">Terms and Conditions</Link>
+              </li>
             </ul>
           </div>
         </div>
