@@ -38,7 +38,7 @@ export default function Header() {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/Cqc6xJXBKjs?controls=0&modestbranding=1&rel=0"
+                  src="https://www.youtube.com/embed/Cqc6xJXBKjs?autoplay=1&controls=0&modestbranding=1&rel=0"
                   title="YouTube video player"
                   style={{ border: "none" }}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -60,14 +60,14 @@ export default function Header() {
         <div className="header-links z-10 pb-4">
           <div className="social-header-links">
             <Link href="https://www.facebook.com/shradertech/">
-              <FaFacebookSquare className="h-8 w-8 text-blue-600" />
+              <FaFacebookSquare className="h-8 w-8 text-black-600 hover:text-blue-600 transition duration-300" />
             </Link>
             <Link href="hhttps://youtube.com/@shradertechnologies">
-              <FaSquareYoutube className="h-8 w-8 text-red-600" />
+              <FaSquareYoutube className="h-8 w-8 hover:text-red-600 transition duration-300" />
             </Link>
 
             <Link href="https://www.tiktok.com/@shrader.tech">
-              <AiFillTikTok className="h-8 w-8 text-black-600" />
+              <AiFillTikTok className="h-8 w-8 hover:text-teal-600 transition duration-300" />
             </Link>
           </div>
           <div className="learn-header-links py-3 px-6 font-[family-name:var(--poppins)]">

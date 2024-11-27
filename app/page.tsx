@@ -7,6 +7,7 @@ import Product from "./components/product/Product";
 import Team from "./components/teams/Team";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
+import Portfolio from "./components/portfolio/Portfolio";
 
 export const metadata: Metadata = {
   title: "Shrader Technologies",
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="main">
       <Navbar />
       <Header />
+      <Portfolio />
       <Edge />
       <Product />
       <Team />

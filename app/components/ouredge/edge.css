@@ -39,14 +39,26 @@
   margin-bottom: 2rem;
 }
 
+.edge-image {
+  width: 100%;
+  height: 60vh;
+  max-width: 400px;
+  background: var(--white);
+  border-radius: 5%;
+  overflow: hidden;
+}
+
 .steps-container {
+  width: 100%; /* Default for small screens */
+  max-width: calc(100% - 300px);
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .step {
+  position: relative;
   display: flex;
   align-items: center;
   align-content: center;
@@ -54,8 +66,15 @@
   font-size: 1.5rem;
   color: var(--white);
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translate(-50px, -50px);
   animation: slide-in 1s ease-out forwards;
+  animation: slide-diagonal 1s ease-out forwards;
+}
+
+.step-counter-container {
+  border: 10px solid var(--matte-black);
+  background: var(--matte-black);
+  margin-left: -6rem;
 }
 
 .step-counter {
@@ -66,7 +85,7 @@
   width: 60px;
   height: 60px;
   background: var(--yellow);
-  border-radius: 10px;
+
   color: var(--black);
   font-size: 1.2rem;
   font-weight: bold;
@@ -92,15 +111,15 @@
   width: 100%;
   color: var(--white);
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translate(-50px, -50px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  border: 1px solid var(--yellow);
   border-radius: 8px;
   padding: 0.8rem 1.1rem;
   background: transparent;
   display: inline-block;
   margin-left: -30px;
   z-index: -1;
+  animation: slide-diagonal 1s ease-out forwards;
 }
 
 .step.active .step-description {
@@ -157,6 +176,13 @@
   }
 }
 
+@keyframes slide-diagonal {
+  to {
+    opacity: 1;
+    transform: translate(0, 0); /* Reset to final position */
+  }
+}
+
 /* *** Responsive Design *** */
 
 @media screen and (min-width: 1024px) {
@@ -205,6 +231,10 @@
     padding: 1.4rem 1.2rem;
   }
 
+  .steps-container {
+    gap: 1rem;
+  }
+
   .step-counter {
     width: 70px;
     height: 70px;
@@ -225,8 +255,12 @@
   }
 }
 
-@media screen and (max-width: 639px) {
-}
+@media screen and (max-width: 767px) {
+  .steps-container {
+    max-width: 100%;
+  }
 
-@media screen and (max-width: 490px) {
+  .step-counter-container {
+    margin-left: 0;
+  }
 }

@@ -21,7 +21,7 @@ export default function Edge() {
             if (stepCounter) {
               setTimeout(() => {
                 stepCounter.classList.add("visible");
-              }, index * 150); // Adjusted for smoother animation
+              }, index * 250); // Adjusted for smoother animation
             }
 
             if (stepDescription) {
@@ -49,7 +49,7 @@ export default function Edge() {
   };
 
   return (
-    <div className="w-full edge-container" id="edge">
+    <div className="w-full h-screen edge-container" id="edge">
       {/* Background */}
       <div className="arrows">
         <Image
@@ -73,28 +73,41 @@ export default function Edge() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <div className="text-center edge-title">
           <h2>Why Shrader Technologies Stands Out</h2>
         </div>
-        <div className="steps-container">
-          {edgeData.map((item, index) => (
-            <div
-              key={item.id}
-              className="step"
-              ref={(el) => {
-                if (el) stepsRef.current[index] = el;
-              }}
-              data-index={index.toString()}
-            >
-              <div className="step-counter">
-                <h3 className="step-title">{item.title}</h3>
-                <div className="step-line"></div>
-                <div className="step-icon">{item.id}</div>
+        <div className="w-full flex flex-col items-center gap-4 md:flex-row md:gap-8">
+          <div className="edge-image">
+            <Image
+              src="/images/stand-out.jpg"
+              alt="Why Shrader Technologies Stands Out"
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="steps-container">
+            {edgeData.map((item, index) => (
+              <div
+                key={item.id}
+                className="step"
+                ref={(el) => {
+                  if (el) stepsRef.current[index] = el;
+                }}
+                data-index={index.toString()}
+              >
+                <div className="step-counter-container">
+                  <div className="step-counter">
+                    <h3 className="step-title">{item.title}</h3>
+                    <div className="step-line"></div>
+                    <div className="step-icon">{item.id}</div>
+                  </div>
+                </div>
+
+                <p className="step-description">{item.description}</p>
               </div>
-              <p className="step-description">{item.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
