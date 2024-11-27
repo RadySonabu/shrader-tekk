@@ -27,7 +27,7 @@ export default function Edge() {
             if (stepDescription) {
               setTimeout(() => {
                 stepDescription.classList.add("visible");
-              }, index * 200); // Adjusted for smoother animation
+              }, index * 250); // Adjusted for smoother animation
             }
           }
         });
@@ -82,8 +82,8 @@ export default function Edge() {
             <Image
               src="/images/stand-out.jpg"
               alt="Why Shrader Technologies Stands Out"
-              width={400}
-              height={400}
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
           <div className="steps-container">
