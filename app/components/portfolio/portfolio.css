@@ -1,5 +1,8 @@
 .portfolio-container {
+  z-index: 11;
+  position: relative;
   background: var(--matte-black);
+  box-shadow: 1px -7px 10px 1px #28282b9a !important;
 }
 
 .portfolio-container ul {
