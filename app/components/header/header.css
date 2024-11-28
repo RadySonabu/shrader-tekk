@@ -237,7 +237,7 @@
 
 @media screen and (max-width: 1023px) {
   .header {
-    height: auto;
+    height: 100vh;
   }
   .header-content {
     padding-top: 10px !important;
@@ -275,8 +275,8 @@
 }
 
 @media screen and (max-width: 900px) {
-  .header {
-    height: auto;
+  .header-content {
+    margin-top: 5rem;
   }
   .hero-background .circle {
     width: 300px;
