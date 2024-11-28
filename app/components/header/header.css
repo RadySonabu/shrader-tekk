@@ -2,7 +2,7 @@
 
 .header {
   position: relative;
-  background: var(--matte-black);
+  background: rgba(40, 40, 43, 0.514);
   height: calc(100vh - 6rem);
 }
 
