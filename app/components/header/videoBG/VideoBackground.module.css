@@ -23,3 +23,9 @@
   z-index: 1; /* Put the filter above the image */
   pointer-events: none; /* Ensure it does not interfere with interactions */
 }
+
+@media (max-width: 900px) {
+  .videoBackground {
+    background-position: left; /* Focus on the left side of the image */
+  }
+}
