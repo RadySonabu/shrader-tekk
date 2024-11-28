@@ -99,3 +99,9 @@
     color: var(--matte-black);
   }
 }
+
+@media screen and (max-width: 390px) {
+  .porfolio-container {
+    margin-top: 2.5rem;
+  }
+}

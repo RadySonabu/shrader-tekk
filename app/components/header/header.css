@@ -41,9 +41,6 @@
   position: relative;
   z-index: 10;
 }
-.elevate-text {
-  padding-left: 3rem;
-}
 
 .elevate-text h2 {
   font-weight: 800;
@@ -111,9 +108,8 @@
 .header-links {
   position: relative;
   width: 30%;
+  left: 0;
   display: flex;
-  justify-self: end;
-  right: 20%;
   justify-content: space-between;
 }
 
@@ -125,12 +121,13 @@
 
 .learn-header-links {
   display: flex;
-  background: var(--yellow);
+  /* background: var(--yellow); */
   font-weight: 600;
-  border-radius: 10px;
+
   color: var(--white);
   display: flex;
   transition: background 0.5s;
+  border-bottom: 3px solid var(--light-blue);
 }
 
 .learn-header-links:hover {
@@ -138,25 +135,15 @@
 }
 
 .learn-header-links .faplay-icons {
-  color: var(--matte-black);
+  color: var(--light-blue);
   transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
 .learn-header-links:hover .faplay-icons {
+  color: var(--matte-black);
   animation: move-smooth 0.6s ease-in-out forwards; /* Increased duration for smoothness */
 }
 
-.mouse-icon {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5.5%;
-  padding-bottom: 5px;
-  animation-delay: 0.2s;
-  animation: mouseIcon 3s infinite ease-in-out;
-  color: var(--charcoal);
-}
 @keyframes move-smooth {
   0% {
     transform: translateX(0);
@@ -236,9 +223,6 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .header {
-    height: 100vh;
-  }
   .header-content {
     padding-top: 10px !important;
     padding-bottom: 15px !important;
@@ -266,6 +250,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-top: 1.5rem;
   }
 
   .elevate-description p {
@@ -319,5 +304,21 @@
     position: relative;
     width: 90%; /* Use full width available in its grid cell */
     padding-top: 50%; /* Maintain 16:9 aspect ratio */
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header-content {
+    margin-top: 0.8rem;
+  }
+
+  .videos {
+    position: relative;
+    width: 80%;
+    padding-top: 45%;
+  }
+
+  .header-links {
+    gap: 10px;
   }
 }

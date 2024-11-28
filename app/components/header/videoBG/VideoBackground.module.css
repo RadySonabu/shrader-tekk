@@ -1,22 +1,17 @@
-/* Video Background Container */
 .videoBackground {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Place the video behind the content */
-  overflow: hidden;
+  z-index: -1; /* Place the background behind the content */
+  background-image: url("/images/background.png"); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-color: rgba(0, 0, 0, 0.925);
 }
 
-/* Make sure the video covers the full area */
-.backgroundVideo {
-  object-fit: cover; /* Ensures the video covers the container */
-  width: 100%;
-  height: 100%;
-}
-
-/* Add color filter with the pseudo-element */
 .videoBackground::before {
   content: "";
   position: absolute;
@@ -24,12 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.664
-  ); /* Dark overlay, you can change the color */
-  z-index: 1; /* Put the filter above the video */
+  background-color: rgba(40, 40, 43, 0.733); /* Add your color overlay */
+  z-index: 1; /* Put the filter above the image */
   pointer-events: none; /* Ensure it does not interfere with interactions */
 }
