@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-PLXR543G" />
-      <body className={`${poppins.className} ${monda.className}`}>
+      <body className={`${poppins.className} ${monda.className} antialiased`}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-PLXR543G"
