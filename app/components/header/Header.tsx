@@ -1,20 +1,20 @@
 import "./header.css";
 import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
-// import Image from "next/image";
+import Image from "next/image";
 import { FaPlay, FaSquareYoutube } from "react-icons/fa6";
 import { AiFillTikTok } from "react-icons/ai";
-import VideoBackground from "./videoBG/videoBackground";
+
 export default function Header() {
-  // const imgStyle = {
-  //   opacity: 0.2,
-  // };
+  const imgStyle = {
+    opacity: 0.2,
+  };
 
   return (
     <header className="w-full header z-10">
       <div className="hero-background -z-1">
         {/* *** Background *** */}
-        {/* <div className="circle">
+        <div className="circle">
           <Image
             src="/images/circle-transparent.png"
             alt="Circle Background"
@@ -22,9 +22,7 @@ export default function Header() {
             height={100}
             style={imgStyle}
           />
-        </div> */}
-
-        <VideoBackground />
+        </div>
 
         {/* *** End Background *** */}
         {/* *** Content *** */}
