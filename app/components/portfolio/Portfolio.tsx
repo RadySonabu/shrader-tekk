@@ -4,7 +4,7 @@ import "./portfolio.css";
 export default function Portfolio() {
   return (
     <div className="w-full min-h-[70vh] flex justify-center items-center portfolio-container">
-      <div className="container mx-auto">
+      <div className="container mx-auto porfolios">
         <ul className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5">
           {portfolioData.map((item) => {
             return (

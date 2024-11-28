@@ -100,8 +100,8 @@
   }
 }
 
-@media screen and (max-width: 390px) {
-  .porfolio-container {
+@media screen and (max-width: 1023px) {
+  .porfolios {
     margin-top: 2.5rem;
   }
 }
