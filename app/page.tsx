@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 };
 export default function Home() {
   return (
+    // Homepage Components
     <main className="main">
       <Navbar />
       <Header />

@@ -45,12 +45,14 @@
 .elevate-text h2 {
   font-weight: 800;
   color: var(--white);
-  font-size: 2rem;
+  font-size: calc(1vw + 2rem);
   background: linear-gradient(to right, var(--white) 50%, #ff5858 50%, #cc2e5d);
   background-size: 200%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.5s ease-out;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .elevate-text h2:hover {
@@ -200,7 +202,7 @@
   }
 
   .elevate-description p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -208,7 +210,7 @@
     height: auto;
   }
   .elevate-text h2 {
-    font-size: 3rem;
+    font-size: calc(1vw + 1.5rem);
   }
 
   .hero-background .digital-images {
@@ -231,8 +233,9 @@
     padding-left: 0;
   }
   .elevate-text h2 {
+    margin-top: 1rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: calc(1vw + 1.1rem);
   }
 
   .videos {
@@ -254,8 +257,9 @@
   }
 
   .elevate-description p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
+    text-align: center;
   }
 }
 
@@ -285,6 +289,7 @@
   .elevate-text h2 {
     font-size: 2rem;
     margin-top: 1rem;
+    white-space: wrap;
   }
   .elevate-description p {
     padding: 0 40px !important;

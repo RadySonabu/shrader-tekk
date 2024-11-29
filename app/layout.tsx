@@ -30,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <GoogleTagManager gtmId="GTM-PLXR543G" />
       <body className={`${poppins.className} ${monda.className} antialiased`}>
+        {/* *** Google Tag Manager *** */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-PLXR543G"
@@ -38,6 +39,10 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        {/* *** Google Tag Manager *** */}
+
+        {/* *** Components ***  */}
+
         {children}
       </body>
     </html>

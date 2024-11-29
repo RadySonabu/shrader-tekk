@@ -7,10 +7,15 @@ import emailjs from "@emailjs/browser";
 import { FormEvent, useRef, useState } from "react";
 
 export default function Form() {
+  // Refs are used to access DOM elements directly; here, `form` holds the contact form reference.
   const form = useRef<HTMLFormElement | null>(null);
+
+  // State to manage the feedback message and whether the message indicates an error.
   const [message, setMessage] = useState<string | null>(null);
   const [isError, setIsError] = useState<boolean>(false);
 
+  // Handles sending the email via emailjs when the form is submitted.
+  // Provides feedback on success or failure and clears the form on successful submission.
   const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -45,12 +50,14 @@ export default function Form() {
     }
   };
 
+  // Adds a CSS class to the parent container for focused input elements.
   const handleFocus = (
     e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     e.target.parentElement?.classList.add("focus");
   };
 
+  // Removes the CSS class from the parent container if the input loses focus and has no value.
   const handleBlur = (
     e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -58,11 +65,15 @@ export default function Form() {
       e.target.parentElement?.classList.remove("focus");
     }
   };
+
+  // Returns the JSX for the contact form, including a social media section and an email form.
+  // Integrates various state and event handlers for interactivity and visual feedback.
   return (
     <section className="w-full">
       <div className="container-contact" id="contact">
         <span className="big-circle"></span>
 
+        {/* Form container, dividing the layout into contact info and form */}
         <div className="form">
           <div className="contact-info">
             <h3 className="title">Let&apos;s get in touch</h3>
@@ -87,6 +98,7 @@ export default function Form() {
               </div> */}
             </div>
 
+            {/* Social media links */}
             <div className="social-media">
               <p>Connect with us :</p>
               <div className="social-icons">
@@ -99,10 +111,13 @@ export default function Form() {
               </div>
             </div>
           </div>
+
+          {/* Right side: Contact form */}
           <div className="contact-form">
             <span className="circle one"></span>
             <span className="circle two"></span>
 
+            {/* Form element with reference, submission handling, and auto-complete */}
             <form
               id="contact-form"
               ref={form}
@@ -158,6 +173,8 @@ export default function Form() {
                 <span>Message</span>
               </div>
               <input type="submit" value="Send" className="btn" />
+
+              {/* Display success or error message based on form submission */}
               {message && (
                 <p
                   id="response-message"
