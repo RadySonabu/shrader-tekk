@@ -6,6 +6,10 @@ import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import { FormEvent, useRef, useState } from "react";
 
+//ChatGPT help debug the code
+//Using Codeium to indentify and fix errors
+
+
 export default function Form() {
   // Refs are used to access DOM elements directly; here, `form` holds the contact form reference.
   const form = useRef<HTMLFormElement | null>(null);
