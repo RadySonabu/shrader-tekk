@@ -216,4 +216,18 @@ export const portfolioData = [
     status:
       "Drove audience beyond 35,000 subscribers and followers in YouTube and TikTok.  Content creation still in progress.",
   },
+
+  ,
+  {
+    id: 5,
+    imgSrc: "/images/portfolio/dcjeddy.png",
+    alt: "Drunk Cooking with Jeddy",
+    title: "Drunk Cooking with Jeddy",
+    description: "Cooking Show | Store's Branding",
+    problem:
+      "DC came to us with a need for a custom website with e-commerce and describing pain points associated with building social media presence alone and charged us with providing price-competitive solutions. ",
+    solution:
+      "Our solutions involved a package of web development, e-commerce app development, and social media development resources that alternate allocations of budget as the needs of DC change over time.  Our small team sizes and agile approaches to management provide the flexibility this client needs. ",
+    status: "Proposals accepted, development in progress.",
+  },
 ];

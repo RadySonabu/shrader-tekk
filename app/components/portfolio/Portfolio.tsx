@@ -5,8 +5,9 @@ export default function Portfolio() {
   return (
     <div className="w-full min-h-[70vh] flex justify-center items-center portfolio-container">
       <div className="container mx-auto porfolios">
-        <ul className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5">
+        <ul className="flex flex-col sm:flex-row sm:flex-wrap justify-start items-center gap-5">
           {portfolioData.map((item) => {
+            if (!item) return null;
             return (
               <li
                 key={item.id}
