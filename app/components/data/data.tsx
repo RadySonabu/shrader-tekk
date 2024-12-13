@@ -108,15 +108,6 @@ export const carouselItems = [
       "I have always been a leader in team-building. One of my jobs as an AI researcher at Georgia Tech was to get isolated AI research groups collaborating together; then I did it again for IBM's Qistkit community. This was harder than it sounds, but I was good at it. I grew up reading Asimov, Herbert, Verne, Dick, Wells, and Shirow and watching Star Trek TNG. Inspired by characters like Data and Wesley, I never forgot my passion for AI and never gave up on the idea that my dreams were possible.",
   },
   {
-    imgSrc: "/images/teams/Victor.png",
-    urlSrc: "#",
-    alt: "Victor",
-    title: "Victor",
-    position: "Mobile Developer",
-    description:
-      "Hi, I’m Victor! I’ve been an Android developer for 2 years, turning caffeine and code into apps that make life easier. From fitness guides to reporting tools and even a smoke detector app, I’ve tackled it all with a keyboard and some creativity.",
-  },
-  {
     imgSrc: "/images/teams/ardy.png",
     urlSrc: "#",
     alt: "Ardy",
@@ -148,13 +139,13 @@ export const carouselItems = [
       "As a graphic designer and social media manager, I bring a background in art, including experience with acrylic abstracts and portraits, that adds a hands-on perspective to my approach to color and design. I also create content for YouTube and TikTok, sharing my love of art with others and reaching new audiences. I’m excited to contribute both my artistic and social media skills to our team and help connect with our community in meaningful ways.",
   },
   {
-    imgSrc: "/images/teams/kent.png",
+    imgSrc: "/images/teams/Victor.png",
     urlSrc: "#",
-    alt: "Kent",
-    title: "Kent",
+    alt: "Victor",
+    title: "Victor",
     position: "Mobile Developer",
     description:
-      "I’m Kent, a mobile developer with 4 years of experience working on various projects, including IoT, GPS-based time tracking, and emergency assistance apps. I’ve had the opportunity to lead small teams, ensuring tasks are completed and projects delivered on time. I was also involved in building a startup, which taught me a lot about project execution and the challenges of securing clients. ",
+      "Hi, I’m Victor! I’ve been an Android developer for 2 years, turning caffeine and code into apps that make life easier. From fitness guides to reporting tools and even a smoke detector app, I’ve tackled it all with a keyboard and some creativity.",
   },
   {
     imgSrc: "/images/teams/nash.png",
